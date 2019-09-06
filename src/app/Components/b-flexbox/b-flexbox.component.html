@@ -73,16 +73,120 @@
         <div class="bg-secondary p-2">Lorem 2</div>
         <div class="bg-secondary p-2">Lorem 3</div>
     </div>
-    
+
     <hr />
     <h2>Align Items</h2>
-    <p>Align the elements vertically. Correct values: .align-items-start, .align-items-end, .align-items-center, .align-items-baseline, and .align-items-stretch (default)</p>
-    <h5 class="p-2">.d-flex .flex-row .align-items-start</h5>
-    <div class="d-flex flex-row align-items-center bg-info text-white my-flex-container ">
-        <div class="bg-secondary my-flex-item">Lorem 1</div>
-        <div class="bg-secondary">Lorem 2</div>
-        <div class="bg-secondary">Lorem 3</div>
+    <p>Align the elements vertically. Correct values: .align-items-start, .align-items-end, .align-items-center,
+        .align-items-baseline, and .align-items-stretch (default)</p>
+    <h5 class="p-2">d-flex flex-row align-items-center</h5>
+    <div class="d-flex flex-row align-items-center my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
     </div>
 
+    <h5 class="p-2">d-flex flex-row align-items-end</h5>
+    <div class="d-flex flex-row align-items-end my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
+    </div>
+
+    <hr />
+    <h2>Align Self </h2>
+    <p>Control the vertical alignment of a specified flex item with the .align-self-* classes. Valid classes are
+        .align-self-start, .align-self-end, .align-self-center, .align-self-baseline, and .align-self-stretch (default).
+    </p>
+    <h5 class="p-2">.align-self-start</h5>
+    <div class="d-flex flex-row align-items-center my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 align-self-start my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
+    </div>
+
+    <div class="d-flex flex-row align-items-start my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 align-self-end my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
+    </div>
+
+    <hr />
+    <h2>Wrap </h2>
+    <p>Control how flex items wrap in a flex container with .flex-nowrap (default), .flex-wrap or .flex-wrap-reverse.
+    </p>
+    <h5 class="p-2">.flex-nowrap(default)</h5>
+    <div class="d-flex flex-row bg-secondary">
+        <div class="p-2 m-1 bg-info">Lorem 1</div>
+        <div class="p-2 m-1 bg-info">Lorem 2</div>
+        <div class="p-2 m-1 bg-info">Lorem 3</div>
+        <div class="p-2 m-1 bg-info">Lorem 4</div>
+        <div class="p-2 m-1 bg-info">Lorem 5</div>
+        <div class="p-2 m-1 bg-info">Lorem 6</div>
+        <div class="p-2 m-1 bg-info">Lorem 7</div>
+        <div class="p-2 m-1 bg-info">Lorem 8</div>
+        <div class="p-2 m-1 bg-info">Lorem 9</div>
+        <div class="p-2 m-1 bg-info">Lorem 10</div>
+        <div class="p-2 m-1 bg-info">Lorem 11</div>
+        <div class="p-2 m-1 bg-info">Lorem 12</div>
+        <div class="p-2 m-1 bg-info">Lorem 13</div>
+        <div class="p-2 m-1 bg-info">Lorem 14</div>
+        <div class="p-2 m-1 bg-info">Lorem 15</div>
+        <div class="p-2 m-1 bg-info">Lorem 16</div>
+        <div class="p-2 m-1 bg-info">Lorem 17</div>
+        <div class="p-2 m-1 bg-info">Lorem 18</div>
+        <div class="p-2 m-1 bg-info">Lorem 19</div>
+        <div class="p-2 m-1 bg-info">Lorem 20</div>
+        <div class="p-2 m-1 bg-info">Lorem 21</div>
+    </div>
+
+    <h5 class="p-2">.flex-wrap</h5>
+    <div class="d-flex flex-row flex-wrap bg-secondary">
+        <div class="p-2 m-1 bg-info">Lorem 1</div>
+        <div class="p-2 m-1 bg-info">Lorem 2</div>
+        <div class="p-2 m-1 bg-info">Lorem 3</div>
+        <div class="p-2 m-1 bg-info">Lorem 4</div>
+        <div class="p-2 m-1 bg-info">Lorem 5</div>
+        <div class="p-2 m-1 bg-info">Lorem 6</div>
+        <div class="p-2 m-1 bg-info">Lorem 7</div>
+        <div class="p-2 m-1 bg-info">Lorem 8</div>
+        <div class="p-2 m-1 bg-info">Lorem 9</div>
+        <div class="p-2 m-1 bg-info">Lorem 10</div>
+        <div class="p-2 m-1 bg-info">Lorem 11</div>
+        <div class="p-2 m-1 bg-info">Lorem 12</div>
+        <div class="p-2 m-1 bg-info">Lorem 13</div>
+        <div class="p-2 m-1 bg-info">Lorem 14</div>
+        <div class="p-2 m-1 bg-info">Lorem 15</div>
+        <div class="p-2 m-1 bg-info">Lorem 16</div>
+        <div class="p-2 m-1 bg-info">Lorem 17</div>
+        <div class="p-2 m-1 bg-info">Lorem 18</div>
+        <div class="p-2 m-1 bg-info">Lorem 19</div>
+        <div class="p-2 m-1 bg-info">Lorem 20</div>
+        <div class="p-2 m-1 bg-info">Lorem 21</div>
+    </div>
+
+    <h5 class="p-2">.flex-wrap-reverse</h5>
+    <div class="d-flex flex-row flex-wrap-reverse bg-secondary">
+        <div class="p-2 m-1 bg-info">Lorem 1</div>
+        <div class="p-2 m-1 bg-info">Lorem 2</div>
+        <div class="p-2 m-1 bg-info">Lorem 3</div>
+        <div class="p-2 m-1 bg-info">Lorem 4</div>
+        <div class="p-2 m-1 bg-info">Lorem 5</div>
+        <div class="p-2 m-1 bg-info">Lorem 6</div>
+        <div class="p-2 m-1 bg-info">Lorem 7</div>
+        <div class="p-2 m-1 bg-info">Lorem 8</div>
+        <div class="p-2 m-1 bg-info">Lorem 9</div>
+        <div class="p-2 m-1 bg-info">Lorem 10</div>
+        <div class="p-2 m-1 bg-info">Lorem 11</div>
+        <div class="p-2 m-1 bg-info">Lorem 12</div>
+        <div class="p-2 m-1 bg-info">Lorem 13</div>
+        <div class="p-2 m-1 bg-info">Lorem 14</div>
+        <div class="p-2 m-1 bg-info">Lorem 15</div>
+        <div class="p-2 m-1 bg-info">Lorem 16</div>
+        <div class="p-2 m-1 bg-info">Lorem 17</div>
+        <div class="p-2 m-1 bg-info">Lorem 18</div>
+        <div class="p-2 m-1 bg-info">Lorem 19</div>
+        <div class="p-2 m-1 bg-info">Lorem 20</div>
+        <div class="p-2 m-1 bg-info">Lorem 21</div>
+    </div>
 
 </div>
