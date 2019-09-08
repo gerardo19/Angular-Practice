@@ -111,6 +111,24 @@
     </div>
 
     <hr />
+    <h2>Align Self(Items) </h2>
+    <p>Control the vertical alignment of a specified flex item with the .align-self-* classes. Valid classes are
+        .align-self-start, .align-self-end, .align-self-center, .align-self-baseline, and .align-self-stretch (default).
+    </p>
+    <h5 class="p-2">.align-self-start</h5>
+    <div class="d-flex flex-row align-items-center my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 align-self-start my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
+    </div>
+
+    <div class="d-flex flex-row align-items-start my-flex-container">
+        <div class="p-2 my-flex-item">Lorem 1</div>
+        <div class="p-2 align-self-end my-flex-item">Lorem 2</div>
+        <div class="p-2 my-flex-item">Lorem 3</div>
+    </div>
+
+    <hr />
     <h2>Wrap </h2>
     <p>Control how flex items wrap in a flex container with .flex-nowrap (default), .flex-wrap or .flex-wrap-reverse.
     </p>
@@ -187,6 +205,61 @@
         <div class="p-2 m-1 bg-info">Lorem 19</div>
         <div class="p-2 m-1 bg-info">Lorem 20</div>
         <div class="p-2 m-1 bg-info">Lorem 21</div>
+    </div>
+
+    <hr />
+    <h2>Order </h2>
+    <p>Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 12, where
+        the lowest number has highest priority
+    </p>
+    <h5 class="p-2">.order-3</h5>
+    <div class="d-flex bg-secondary">
+        <div class="p-2 bg-info order-3">Lorem 1</div>
+        <div class="p-2 bg-info">Lorem 2</div>
+        <div class="p-2 bg-info">Lorem 3</div>
+    </div>
+
+    <hr />
+    <h2>Fill / Equal Widths</h2>
+    <p>Use .flex-fill on flex items to force them into equal widths: </p>
+    <h5 class="p-2">.flex-fill</h5>
+    <div class="d-flex bg-secondary">
+        <div class="p-2 m-1 bg-info flex-fill">Lorem 1 flex-fill</div>
+        <div class="p-2 m-1 bg-info">Lorem 2</div>
+        <div class="p-2 m-1 bg-info">Lorem 3</div>
+    </div>
+
+    <hr />
+    <h2>Grow</h2>
+    <p>Use .flex-grow-1 on a flex item to take up the rest of the space </p>
+    <h5 class="p-2">.flex-fill</h5>
+    <div class="d-flex bg-secondary">
+        <div class="p-2 m-1 bg-info">Lorem 1</div>
+        <div class="p-2 m-1 bg-info">Lorem 2</div>
+        <div class="p-2 m-1 bg-info flex-grow-1">Lorem 3 flex-grow-1</div>
+    </div>
+
+    <hr />
+    <h2>Auto Margins</h2>
+    <p>Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items
+        to the left) </p>
+    <h5 class="p-2">.flex-fill</h5>
+    <div class="d-flex bg-secondary">
+        <div class="p-2 m-1 mr-auto bg-info">Lorem 1 mr-auto</div>
+        <div class="p-2 m-1 bg-warning">Lorem 2</div>
+        <div class="p-2 m-1 bg-primary">Lorem 3</div>
+    </div><br />
+
+    <div class="d-flex bg-secondary">
+        <div class="p-2 m-1 bg-info">Lorem 1</div>
+        <div class="p-2 m-1 bg-warning">Lorem 2</div>
+        <div class="p-2 m-1 ml-auto bg-primary">Lorem 3 ml-auto</div>
+    </div>
+
+    <hr />
+    <h2>Full Center</h2>
+    <div class="d-flex bg-secondary justify-content-center lex-row align-items-center my-flex-container">
+        <div class="bg-info">Lorem ipsum</div>
     </div>
 
 </div>
