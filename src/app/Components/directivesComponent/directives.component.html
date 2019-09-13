@@ -1,5 +1,30 @@
 <div class="container-fluid">
-    <h2>Directives</h2>
-    <hr />
-    <p [appChangeColor]="'green'">Highlight me!</p>
+  <h3>Directives</h3>
+  <hr />
+  <p [appChangeColor]="'green'">Highlight me!</p>
+</div>
+
+
+<div class="container-fluid">
+<div class="col-md-7">
+    <h3>Horizantal menu</h3>
+
+  <h6>Directive with role: VIEWER</h6>
+  <nav class="navbar" bg-info [appDynamicMenu]="'VIEWER'">
+    <ul class="navbar-nav">
+    </ul>
+  </nav>
+
+  <h6>Directive with role: ADMIN</h6>
+  <nav class="navbar" bg-info [appDynamicMenu]="'ADMIN'">
+    <ul class="navbar-nav">
+    </ul>
+  </nav>
+
+  <h6>Directive with role: SA</h6>
+  <nav class="navbar" bg-info [appDynamicMenu]="'SA'">
+    <ul class="navbar-nav">
+    </ul>
+  </nav>
+</div>
 </div>

@@ -29,6 +29,11 @@ const routes: Routes = [
   }
 ];
 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+
 /* Para precargar todos los módulos
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
@@ -41,6 +46,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })*/
 
+/* Para precargar los módules custom
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     enableTracing: true,   //  <---- debuggin purposes only
@@ -48,6 +54,6 @@ const routes: Routes = [
   })],
   exports: [RouterModule]
 })
-
+*/
 
 export class AppRoutingModule { }
