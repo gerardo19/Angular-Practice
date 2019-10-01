@@ -1,0 +1,177 @@
+<div class="container">
+    <h1>PIPES</h1>
+    <h5>Más info en: <a href='https://angular.io/api?query=pipe&type=pipe'>Documentación de pipes</a></h5>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Variables</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>uppercase</td>
+                <td>{{nombre | uppercase}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>lowercase</td>
+                <td>{{nombre | lowercase}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>slice:3</td>
+                <td>{{nombre | slice:3}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>slice:0:3</td>
+                <td>{{nombre | slice:0:3}}</td>
+            </tr>
+            <tr>
+                <td>{{arregloNum}}</td>
+                <td>slice:0:3</td>
+                <td>{{arregloNum | slice:0:3}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Lista de li</p>
+                    <ul>
+                        <li *ngFor='let item of arregloNum'>{{item}}</li>
+                    </ul>
+                </td>
+                <td>slice:5:100</td>
+                <td>
+                    <ul>
+                        <li *ngFor='let item of arregloNum | slice:0:4'>{{item}}</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{PI}}</td>
+                <td>number:'2.1-3'</td>
+                <td>{{PI | number:'2.1-3'}}</td>
+            </tr>
+            <tr>
+                <td>{{PI}}</td>
+                <td>number:'3.0-0'</td>
+                <td>{{PI | number:'3.0-0'}}</td>
+            </tr>
+            <tr>
+                <td>{{PI}}</td>
+                <td>number:'1.0-2'</td>
+                <td>{{PI | number:'1.0-2'}}</td>
+            </tr>
+
+            <tr>
+                <td>{{PI}}</td>
+                <td>percent:'2.0-5'</td>
+                <td>{{PI | percent:'2.0-5'}}</td>
+            </tr>
+
+            <tr>
+                <td>{{salario}}</td>
+                <td>currency</td>
+                <td>{{salario | currency}}</td>
+            </tr>
+
+            <tr>
+                <td>{{salario}}</td>
+                <td>currency:'EUR'</td>
+                <td>{{salario | currency:'EUR'}}</td>
+            </tr>
+
+            <tr>
+                <td>{{salario}}</td>
+                <td>currency:'EUR':false</td>
+                <td>{{salario | currency:'EUR':false}}</td>
+            </tr>
+
+            <tr>
+                <td>{{salario}}</td>
+                <td>currency:'EUR':true:'5.0-1'</td>
+                <td>{{salario | currency:'EUR':true:'5.0-1'}}</td>
+            </tr>
+
+            <tr>
+                <td>{{heroe}}</td>
+                <td>json</td>
+                <td>{{heroe | json}}</td>
+            </tr>
+
+            <tr>
+                <td>{{heroe}}</td>
+                <td>heroe | json - con un tag pre</td>
+                <td>
+                    <pre>{{heroe | json}}</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{promesa}}</td>
+                <td>promesa | async</td>
+                <td>
+                    <pre>{{promesa | async}}</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date</td>
+                <td>
+                    <pre>{{fecha | date}}</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date:'medium'</td>
+                <td>
+                    <pre>{{fecha | date:'medium'}}</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{fecha}}</td>
+                <td>date:'dd-MMMM'</td>
+                <td>
+                    <pre>{{fecha | date:'dd-MMMM'}}</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{nombre2}}</td>
+                <td>capitalizado</td>
+                <td>{{nombre2 | capitalizado}}</td>
+            </tr>
+
+            <tr>
+                <td>{{nombre2}}</td>
+                <td>capitalizado:false</td>
+                <td>{{nombre2 | capitalizado:false}}</td>
+            </tr>
+
+            <tr>
+                <td>{{nombre}}</td>
+                <td>password: {{activarPass}}
+                    <button (click)='activarPass = !activarPass'>Activar / Desactivar</button>
+                </td>
+                <td>{{nombre | password:activarPass}}</td>
+            </tr>
+
+            <tr>
+                <td>Iframe de youtube</td>
+                <td>| domSeguro:'https://www.youtube.com/embed/'</td>
+                <td><iframe width="560" height="315" [src]="video | domSeguro:'https://www.youtube.com/embed/'"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

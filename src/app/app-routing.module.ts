@@ -3,6 +3,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { BFlexboxComponent } from './Components/b-flexbox/b-flexbox.component';
 import { DirectivesComponent } from './Components/directivesComponent/directives.component';
 import { PreloadingStrategyService } from './services/preloading-strategy.service';
+import { PipesComponent } from './Components/pipes/pipes.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'directive',
     component: DirectivesComponent
+  },
+  {
+    path: 'pipes',
+    component: PipesComponent
   },
   {
     path: '',
